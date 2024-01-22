@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Le jeu de la vie 3D avec MPI: Référence du fichier file_results.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Le jeu de la vie 3D avec MPI
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('file__results_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier file_results.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Gestion du stockage des résultats du programme.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="configuration_8h_source.html">configuration.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="grid_8h_source.html">grid.h</a>&quot;</code><br />
+<code>#include &lt;dirent.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;sys/stat.h&gt;</code><br />
+<code>#include &lt;sys/types.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de file_results.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="file__results_8h__incl.png" border="0" usemap="#afile__results_8h" alt=""/></div>
+<map name="afile__results_8h" id="afile__results_8h">
+<area shape="rect" title="Gestion du stockage des résultats du programme." alt="" coords="320,5,416,32"/>
+<area shape="rect" href="configuration_8h.html" title="Configuration du programme du jeu de la vie." alt="" coords="159,80,265,107"/>
+<area shape="rect" href="grid_8h.html" title="Gestion de tout ce qui touche aux générations de cellules géré par le processus 0." alt="" coords="79,80,134,107"/>
+<area shape="rect" title=" " alt="" coords="290,80,355,107"/>
+<area shape="rect" title=" " alt="" coords="379,80,447,107"/>
+<area shape="rect" title=" " alt="" coords="472,80,552,107"/>
+<area shape="rect" title=" " alt="" coords="576,80,667,107"/>
+<area shape="rect" title=" " alt="" coords="5,155,67,181"/>
+<area shape="rect" title=" " alt="" coords="91,155,155,181"/>
+<area shape="rect" title=" " alt="" coords="179,155,245,181"/>
+<area shape="rect" title=" " alt="" coords="269,155,334,181"/>
+</map>
+</div>
+</div>
+<p><a href="file__results_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFileResults.html">FileResults</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objet regroupant les informations de la création du fichier de résultats.  <a href="structFileResults.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a257d61e3d299e304fd75a949f3d33804"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFileResults.html">FileResults</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__results_8h.html#a257d61e3d299e304fd75a949f3d33804">FileResults__create</a> (<a class="el" href="structConfiguration.html">Configuration</a> *config)</td></tr>
+<tr class="memdesc:a257d61e3d299e304fd75a949f3d33804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de l'objet <a class="el" href="structFileResults.html" title="Objet regroupant les informations de la création du fichier de résultats.">FileResults</a> permettant de mettre en place la base du fichier de résultats ainsi que la création du dossier dans lequel le fichier de résultats sera stocké.  <a href="file__results_8h.html#a257d61e3d299e304fd75a949f3d33804">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a257d61e3d299e304fd75a949f3d33804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eb108ce31ad7dc926fe149b414316f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__results_8h.html#a6eb108ce31ad7dc926fe149b414316f9">FileResults__storePattern</a> (<a class="el" href="structFileResults.html">FileResults</a> *self, char ***tab, int gridSize)</td></tr>
+<tr class="memdesc:a6eb108ce31ad7dc926fe149b414316f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant (uniquement dans le cas d'une analyse sur une seule seed et une seule taille de grille) d'écrire dans le fichier de résultats une grille de cellules sous la forme de fauillets (appelés niveaux dans le fichier) De plus, seuls les feuillets possédant au moins ue cellule vivante seront affichés dans le fichier.  <a href="file__results_8h.html#a6eb108ce31ad7dc926fe149b414316f9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a6eb108ce31ad7dc926fe149b414316f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b491bf5b0884686d721f4f6b02a112"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__results_8h.html#a33b491bf5b0884686d721f4f6b02a112">FileResults__storeResults</a> (<a class="el" href="structFileResults.html">FileResults</a> *self, <a class="el" href="structGrid.html">Grid</a> *grid, int result, int generation)</td></tr>
+<tr class="memdesc:a33b491bf5b0884686d721f4f6b02a112"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant (uniquement dans le cas d'une analyse sur une seule seed et une seule taille de grille) d'écrire dans le fichier de résultats la ou les patterns de cellules finaux en fonction des résultats de l'analyse.  <a href="file__results_8h.html#a33b491bf5b0884686d721f4f6b02a112">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a33b491bf5b0884686d721f4f6b02a112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd92d526456da4ff3df596fd4390bb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__results_8h.html#afcd92d526456da4ff3df596fd4390bb3">FileResults__createResultTable</a> (<a class="el" href="structFileResults.html">FileResults</a> *self, <a class="el" href="structConfiguration.html">Configuration</a> *config, int *results)</td></tr>
+<tr class="memdesc:afcd92d526456da4ff3df596fd4390bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant (uniquement dans le cas d'une analyse sur une plage de seeds et une plage de tailles de grille) d'écrire dans le fichier de résultats tous les résultats de toutes les analyses effectuées par le programme sous la forme d'un tableau avec un code couleur en fonction du résultat de l'analyse.  <a href="file__results_8h.html#afcd92d526456da4ff3df596fd4390bb3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:afcd92d526456da4ff3df596fd4390bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41282b54c962e5a2fe9f027583fa6f5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__results_8h.html#a41282b54c962e5a2fe9f027583fa6f5a">FileResults__exportResults</a> (<a class="el" href="structFileResults.html">FileResults</a> *self, <a class="el" href="structConfiguration.html">Configuration</a> *config)</td></tr>
+<tr class="memdesc:a41282b54c962e5a2fe9f027583fa6f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant de finaliser le fichier de résultat et de proposer à l'utilisateur d'exporter ses résultats sous la forme d'un fichier pdf.  <a href="file__results_8h.html#a41282b54c962e5a2fe9f027583fa6f5a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a41282b54c962e5a2fe9f027583fa6f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a685e62cf232ee24137913de545f6e38d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__results_8h.html#a685e62cf232ee24137913de545f6e38d">FileResults__destroy</a> (<a class="el" href="structFileResults.html">FileResults</a> **self)</td></tr>
+<tr class="memdesc:a685e62cf232ee24137913de545f6e38d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur d'une instance d'un objet <a class="el" href="structFileResults.html" title="Objet regroupant les informations de la création du fichier de résultats.">FileResults</a>.  <a href="file__results_8h.html#a685e62cf232ee24137913de545f6e38d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a685e62cf232ee24137913de545f6e38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Gestion du stockage des résultats du programme. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Richard Leestmans </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>11 Décembre 2022</dd></dl>
+<p>Partie du programme permettant de centraliser les résultats et de générer un affichage dans une page html voire au format pdf (au choix de l'utilisateur) afin de permettre une meilleure interprétation des résultats. </p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a257d61e3d299e304fd75a949f3d33804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a257d61e3d299e304fd75a949f3d33804">&#9670;&nbsp;</a></span>FileResults__create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structFileResults.html">FileResults</a>* FileResults__create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structConfiguration.html">Configuration</a> *&#160;</td>
+          <td class="paramname"><em>config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur de l'objet <a class="el" href="structFileResults.html" title="Objet regroupant les informations de la création du fichier de résultats.">FileResults</a> permettant de mettre en place la base du fichier de résultats ainsi que la création du dossier dans lequel le fichier de résultats sera stocké. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config</td><td>Instance d'un objet <a class="el" href="structConfiguration.html" title="Objet regroupant les informations de configuration.">Configuration</a> permettant de créer le fichier de résultats en fonction de la configuration du programme choisie par l'utilisateur </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Instance nouvelle allouée d'un objet de type <a class="el" href="structFileResults.html" title="Objet regroupant les informations de la création du fichier de résultats.">FileResults</a> </dd></dl>
+
+</div>
+</div>
+<a id="afcd92d526456da4ff3df596fd4390bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd92d526456da4ff3df596fd4390bb3">&#9670;&nbsp;</a></span>FileResults__createResultTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FileResults__createResultTable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFileResults.html">FileResults</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structConfiguration.html">Configuration</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>results</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant (uniquement dans le cas d'une analyse sur une plage de seeds et une plage de tailles de grille) d'écrire dans le fichier de résultats tous les résultats de toutes les analyses effectuées par le programme sous la forme d'un tableau avec un code couleur en fonction du résultat de l'analyse. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance d'un objet <a class="el" href="structFileResults.html" title="Objet regroupant les informations de la création du fichier de résultats.">FileResults</a> référençant le fichier dans lequel les données vont être écrites </td></tr>
+    <tr><td class="paramname">config</td><td>Instance d'un objet <a class="el" href="structConfiguration.html" title="Objet regroupant les informations de configuration.">Configuration</a> contenant les informations de plage de seeds et de tailles de grilles nécessaires à la création du tableau de résultats </td></tr>
+    <tr><td class="paramname">results</td><td>Tableau de tous les résultats obtenus lors de toutes les analyses effectuées </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a685e62cf232ee24137913de545f6e38d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a685e62cf232ee24137913de545f6e38d">&#9670;&nbsp;</a></span>FileResults__destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FileResults__destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFileResults.html">FileResults</a> **&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructeur d'une instance d'un objet <a class="el" href="structFileResults.html" title="Objet regroupant les informations de la création du fichier de résultats.">FileResults</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Adresse d'une instance d'un objet <a class="el" href="structFileResults.html" title="Objet regroupant les informations de la création du fichier de résultats.">FileResults</a> à détruire </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a41282b54c962e5a2fe9f027583fa6f5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41282b54c962e5a2fe9f027583fa6f5a">&#9670;&nbsp;</a></span>FileResults__exportResults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FileResults__exportResults </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFileResults.html">FileResults</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structConfiguration.html">Configuration</a> *&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant de finaliser le fichier de résultat et de proposer à l'utilisateur d'exporter ses résultats sous la forme d'un fichier pdf. </p>
+<p>L'exportation dépendra de la taille des données dans le fichier de résultats.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance d'un objet <a class="el" href="structFileResults.html" title="Objet regroupant les informations de la création du fichier de résultats.">FileResults</a> référençant le fichier dans lequel les données vont être écrites </td></tr>
+    <tr><td class="paramname">config</td><td>Instance d'un objet <a class="el" href="structConfiguration.html" title="Objet regroupant les informations de configuration.">Configuration</a> permettant de déterminer si l'utilisateur peut exporter les résultats sous la forme d'un fichier pdf </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6eb108ce31ad7dc926fe149b414316f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eb108ce31ad7dc926fe149b414316f9">&#9670;&nbsp;</a></span>FileResults__storePattern()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FileResults__storePattern </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFileResults.html">FileResults</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char ***&#160;</td>
+          <td class="paramname"><em>tab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant (uniquement dans le cas d'une analyse sur une seule seed et une seule taille de grille) d'écrire dans le fichier de résultats une grille de cellules sous la forme de fauillets (appelés niveaux dans le fichier) De plus, seuls les feuillets possédant au moins ue cellule vivante seront affichés dans le fichier. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance d'un objet <a class="el" href="structFileResults.html" title="Objet regroupant les informations de la création du fichier de résultats.">FileResults</a> référençant le fichier dans lequel les données vont être écrites </td></tr>
+    <tr><td class="paramname">tab</td><td>Grille de cellules à écrire dans le fichier de résultats </td></tr>
+    <tr><td class="paramname">gridSize</td><td>Taille de la grille, c'est-à-dire la longueur d'un côté du cube </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a33b491bf5b0884686d721f4f6b02a112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33b491bf5b0884686d721f4f6b02a112">&#9670;&nbsp;</a></span>FileResults__storeResults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FileResults__storeResults </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFileResults.html">FileResults</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structGrid.html">Grid</a> *&#160;</td>
+          <td class="paramname"><em>grid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>generation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant (uniquement dans le cas d'une analyse sur une seule seed et une seule taille de grille) d'écrire dans le fichier de résultats la ou les patterns de cellules finaux en fonction des résultats de l'analyse. </p>
+<p>Par exemple, si l'analyse donne pour résultat une configuration oscillatoire de période 2, la fonction va écrire dans le fichier les patterns des 2 états de l'oscillation.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance d'un objet <a class="el" href="structFileResults.html" title="Objet regroupant les informations de la création du fichier de résultats.">FileResults</a> référençant le fichier dans lequel les données vont être écrites </td></tr>
+    <tr><td class="paramname">grid</td><td>Instance d'un objet <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a> qui va contenir les patterns finaux de cellules à stocker dans le fichier </td></tr>
+    <tr><td class="paramname">result</td><td>Valeur du résultat de l'analyse déterminant quoi écrire dans le fichier </td></tr>
+    <tr><td class="paramname">generation</td><td>Valeur de la génération à laquelle le résultat final a été obtenu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="file__results_8h.html">file_results.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

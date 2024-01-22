@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Le jeu de la vie 3D avec MPI:  Fichier source de configuration.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Le jeu de la vie 3D avec MPI
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('configuration_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">configuration.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="configuration_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CONFIGURATION_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CONFIGURATION_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;ctype.h&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structConfiguration.html">   26</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structConfiguration.html#aaec2c7b19f1d246f296e03e57590058e">   28</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structConfiguration.html#aaec2c7b19f1d246f296e03e57590058e">typeOfAnalysis</a>; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structConfiguration.html#a1c731a552bb785fa166242d18d1ceac3">   29</a></span>&#160;    <span class="keywordtype">char</span> rule[5];</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structConfiguration.html#a461c1f366c9c83933e1d20593f12907c">   32</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structConfiguration.html#a461c1f366c9c83933e1d20593f12907c">seedInfRange</a>; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structConfiguration.html#aeec3eaaf94a7747cc7e0150dc06f8de2">   33</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structConfiguration.html#aeec3eaaf94a7747cc7e0150dc06f8de2">seedSupRange</a>; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structConfiguration.html#a0f78270f66a21b576919d661f60369ec">   35</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structConfiguration.html#a0f78270f66a21b576919d661f60369ec">gridSizeInfRange</a>; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structConfiguration.html#a06795317b4cfbf6c33ae22d7f6d6ba7a">   37</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structConfiguration.html#a06795317b4cfbf6c33ae22d7f6d6ba7a">gridSizeSupRange</a>; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structConfiguration.html#adfb9ea70c92fe703093e888a046fa646">   39</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structConfiguration.html#adfb9ea70c92fe703093e888a046fa646">nbGenerations</a>; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structConfiguration.html#afad86399d650b0193758db7c9b30384c">   40</a></span>&#160;    <span class="keywordtype">int</span>* <a class="code" href="structConfiguration.html#afad86399d650b0193758db7c9b30384c">tasksPerProc</a>; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}<a class="code" href="structConfiguration.html">Configuration</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="structConfiguration.html">Configuration</a>* <a class="code" href="configuration_8h.html#a254094833be2cf24fae6aac95d03fe16">Configuration__create</a>(<span class="keywordtype">int</span> nbProc);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<a class="code" href="structConfiguration.html">Configuration</a>* <a class="code" href="configuration_8h.html#ae9ade52a39fbd41f18d1bfebdb153fe4">Configuration__createSingleAnalysis</a>(<span class="keywordtype">int</span> nbProc);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="structConfiguration.html">Configuration</a>* <a class="code" href="configuration_8h.html#a85d6f4fb58a9c87649b9fae0e7eda70e">Configuration__createDataRangeAnalysis</a>(<span class="keywordtype">int</span> nbProc);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span> <a class="code" href="configuration_8h.html#a4638a10835be1447ae68231c6ec68cc6">Configuration__setParameters</a>(<a class="code" href="structConfiguration.html">Configuration</a>* <span class="keyword">self</span>, <span class="keywordtype">int</span> nbProc);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">int</span> <a class="code" href="configuration_8h.html#a1e9c63da34d6579cdf1b3e0da0a47997">Configuration__isANumber</a>(<span class="keywordtype">char</span>* text);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">void</span> <a class="code" href="configuration_8h.html#aabbf1726dc64c90b8c92f2a72d30c72c">Configuration__setTasksPerProc</a>(<a class="code" href="structConfiguration.html">Configuration</a>* <span class="keyword">self</span>, <span class="keywordtype">int</span> gridSize, <span class="keywordtype">int</span> nbProc);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">void</span> <a class="code" href="configuration_8h.html#ad0c67d6c273cff37c172fd8f12d62c52">Configuration__resetNumOfTasks</a>(<a class="code" href="structConfiguration.html">Configuration</a>* <span class="keyword">self</span>, <span class="keywordtype">int</span> nbProc);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keywordtype">void</span> <a class="code" href="configuration_8h.html#ad61a23065fb9ba35f252a140999fb8cd">Configuration__destroy</a>(<a class="code" href="structConfiguration.html">Configuration</a>** <span class="keyword">self</span>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aconfiguration_8h_html_a1e9c63da34d6579cdf1b3e0da0a47997"><div class="ttname"><a href="configuration_8h.html#a1e9c63da34d6579cdf1b3e0da0a47997">Configuration__isANumber</a></div><div class="ttdeci">int Configuration__isANumber(char *text)</div><div class="ttdoc">fonction permettant de déterminer si une chaine de caractère est un nombre</div><div class="ttdef"><b>Definition:</b> configuration.c:381</div></div>
+<div class="ttc" id="aconfiguration_8h_html_a254094833be2cf24fae6aac95d03fe16"><div class="ttname"><a href="configuration_8h.html#a254094833be2cf24fae6aac95d03fe16">Configuration__create</a></div><div class="ttdeci">Configuration * Configuration__create(int nbProc)</div><div class="ttdoc">Constructeur de l'objet Configuration dans le cas d'une analyse où les paramètres sont choisis par l'...</div><div class="ttdef"><b>Definition:</b> configuration.c:3</div></div>
+<div class="ttc" id="aconfiguration_8h_html_a4638a10835be1447ae68231c6ec68cc6"><div class="ttname"><a href="configuration_8h.html#a4638a10835be1447ae68231c6ec68cc6">Configuration__setParameters</a></div><div class="ttdeci">void Configuration__setParameters(Configuration *self, int nbProc)</div><div class="ttdoc">fonction permettant de définir tous les attributs d'une instance de Configuration</div><div class="ttdef"><b>Definition:</b> configuration.c:68</div></div>
+<div class="ttc" id="aconfiguration_8h_html_a85d6f4fb58a9c87649b9fae0e7eda70e"><div class="ttname"><a href="configuration_8h.html#a85d6f4fb58a9c87649b9fae0e7eda70e">Configuration__createDataRangeAnalysis</a></div><div class="ttdeci">Configuration * Configuration__createDataRangeAnalysis(int nbProc)</div><div class="ttdoc">Constructeur de l'objet Configuration dans le cas d'un test de l'analyse d'une plage de seeds et d'un...</div><div class="ttdef"><b>Definition:</b> configuration.c:41</div></div>
+<div class="ttc" id="aconfiguration_8h_html_aabbf1726dc64c90b8c92f2a72d30c72c"><div class="ttname"><a href="configuration_8h.html#aabbf1726dc64c90b8c92f2a72d30c72c">Configuration__setTasksPerProc</a></div><div class="ttdeci">void Configuration__setTasksPerProc(Configuration *self, int gridSize, int nbProc)</div><div class="ttdoc">fonction permettant de définir le nombre de feuillets affectés à chaque processus</div><div class="ttdef"><b>Definition:</b> configuration.c:401</div></div>
+<div class="ttc" id="aconfiguration_8h_html_ad0c67d6c273cff37c172fd8f12d62c52"><div class="ttname"><a href="configuration_8h.html#ad0c67d6c273cff37c172fd8f12d62c52">Configuration__resetNumOfTasks</a></div><div class="ttdeci">void Configuration__resetNumOfTasks(Configuration *self, int nbProc)</div><div class="ttdoc">fonction permettant de remettre à zéro le nombre de feuillets assignés à chaque processus</div><div class="ttdef"><b>Definition:</b> configuration.c:433</div></div>
+<div class="ttc" id="aconfiguration_8h_html_ad61a23065fb9ba35f252a140999fb8cd"><div class="ttname"><a href="configuration_8h.html#ad61a23065fb9ba35f252a140999fb8cd">Configuration__destroy</a></div><div class="ttdeci">void Configuration__destroy(Configuration **self)</div><div class="ttdoc">destructeur d'une instance de l'objet Configuration</div><div class="ttdef"><b>Definition:</b> configuration.c:441</div></div>
+<div class="ttc" id="aconfiguration_8h_html_ae9ade52a39fbd41f18d1bfebdb153fe4"><div class="ttname"><a href="configuration_8h.html#ae9ade52a39fbd41f18d1bfebdb153fe4">Configuration__createSingleAnalysis</a></div><div class="ttdeci">Configuration * Configuration__createSingleAnalysis(int nbProc)</div><div class="ttdoc">Constructeur de l'objet Configuration dans le cas d'un test de l'analyse d'une seed et d'une taille d...</div><div class="ttdef"><b>Definition:</b> configuration.c:15</div></div>
+<div class="ttc" id="astructConfiguration_html"><div class="ttname"><a href="structConfiguration.html">Configuration</a></div><div class="ttdoc">Objet regroupant les informations de configuration.</div><div class="ttdef"><b>Definition:</b> configuration.h:27</div></div>
+<div class="ttc" id="astructConfiguration_html_a06795317b4cfbf6c33ae22d7f6d6ba7a"><div class="ttname"><a href="structConfiguration.html#a06795317b4cfbf6c33ae22d7f6d6ba7a">Configuration::gridSizeSupRange</a></div><div class="ttdeci">int gridSizeSupRange</div><div class="ttdef"><b>Definition:</b> configuration.h:37</div></div>
+<div class="ttc" id="astructConfiguration_html_a0f78270f66a21b576919d661f60369ec"><div class="ttname"><a href="structConfiguration.html#a0f78270f66a21b576919d661f60369ec">Configuration::gridSizeInfRange</a></div><div class="ttdeci">int gridSizeInfRange</div><div class="ttdef"><b>Definition:</b> configuration.h:35</div></div>
+<div class="ttc" id="astructConfiguration_html_a461c1f366c9c83933e1d20593f12907c"><div class="ttname"><a href="structConfiguration.html#a461c1f366c9c83933e1d20593f12907c">Configuration::seedInfRange</a></div><div class="ttdeci">int seedInfRange</div><div class="ttdef"><b>Definition:</b> configuration.h:32</div></div>
+<div class="ttc" id="astructConfiguration_html_aaec2c7b19f1d246f296e03e57590058e"><div class="ttname"><a href="structConfiguration.html#aaec2c7b19f1d246f296e03e57590058e">Configuration::typeOfAnalysis</a></div><div class="ttdeci">int typeOfAnalysis</div><div class="ttdef"><b>Definition:</b> configuration.h:28</div></div>
+<div class="ttc" id="astructConfiguration_html_adfb9ea70c92fe703093e888a046fa646"><div class="ttname"><a href="structConfiguration.html#adfb9ea70c92fe703093e888a046fa646">Configuration::nbGenerations</a></div><div class="ttdeci">int nbGenerations</div><div class="ttdef"><b>Definition:</b> configuration.h:39</div></div>
+<div class="ttc" id="astructConfiguration_html_aeec3eaaf94a7747cc7e0150dc06f8de2"><div class="ttname"><a href="structConfiguration.html#aeec3eaaf94a7747cc7e0150dc06f8de2">Configuration::seedSupRange</a></div><div class="ttdeci">int seedSupRange</div><div class="ttdef"><b>Definition:</b> configuration.h:33</div></div>
+<div class="ttc" id="astructConfiguration_html_afad86399d650b0193758db7c9b30384c"><div class="ttname"><a href="structConfiguration.html#afad86399d650b0193758db7c9b30384c">Configuration::tasksPerProc</a></div><div class="ttdeci">int * tasksPerProc</div><div class="ttdef"><b>Definition:</b> configuration.h:40</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="configuration_8h.html">configuration.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

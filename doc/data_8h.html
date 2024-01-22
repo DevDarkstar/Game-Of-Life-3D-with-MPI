@@ -1,0 +1,475 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Le jeu de la vie 3D avec MPI: Référence du fichier data.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Le jeu de la vie 3D avec MPI
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('data_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier data.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Gestion des données envoyées par le processus 0 et reçues par tous les autres processuss.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de data.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="data_8h__incl.png" border="0" usemap="#adata_8h" alt=""/></div>
+<map name="adata_8h" id="adata_8h">
+<area shape="rect" title="Gestion des données envoyées par le processus 0 et reçues par tous les autres processuss." alt="" coords="93,5,152,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,67,107"/>
+<area shape="rect" title=" " alt="" coords="91,80,155,107"/>
+<area shape="rect" title=" " alt="" coords="179,80,245,107"/>
+</map>
+</div>
+</div>
+<p><a href="data_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structData.html">Data</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objet regroupant les données reçues par le processus 0.  <a href="structData.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:aa96bf4865237acdad0d1aefc35df9bd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structData.html">Data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data_8h.html#aa96bf4865237acdad0d1aefc35df9bd9">Data__create</a> (char *data)</td></tr>
+<tr class="memdesc:aa96bf4865237acdad0d1aefc35df9bd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de l'objet <a class="el" href="structData.html" title="Objet regroupant les données reçues par le processus 0.">Data</a> permettant de regrouper les informations envoyées par le processus 0.  <a href="data_8h.html#aa96bf4865237acdad0d1aefc35df9bd9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa96bf4865237acdad0d1aefc35df9bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07efff64d9a00cba9a1d44d6ea114799"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data_8h.html#a07efff64d9a00cba9a1d44d6ea114799">Data__getGridSize</a> (<a class="el" href="structData.html">Data</a> *self)</td></tr>
+<tr class="memdesc:a07efff64d9a00cba9a1d44d6ea114799"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur sur la taille de la grille.  <a href="data_8h.html#a07efff64d9a00cba9a1d44d6ea114799">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a07efff64d9a00cba9a1d44d6ea114799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a7c462fa57fba89ecadbb0b338e39b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data_8h.html#a2a7c462fa57fba89ecadbb0b338e39b2">Data__storeData</a> (<a class="el" href="structData.html">Data</a> *self, char *data)</td></tr>
+<tr class="memdesc:a2a7c462fa57fba89ecadbb0b338e39b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant de stocker les différentes informations contenues dans les données, envoyées par le processus 0, dans les attributs de la structure.  <a href="data_8h.html#a2a7c462fa57fba89ecadbb0b338e39b2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2a7c462fa57fba89ecadbb0b338e39b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9364df96978352d359cefb23e603751"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data_8h.html#ab9364df96978352d359cefb23e603751">Data__dataToGrid</a> (<a class="el" href="structData.html">Data</a> *self, char *data)</td></tr>
+<tr class="memdesc:ab9364df96978352d359cefb23e603751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant de stocker des données contenues dans une chaine de caractères dans une grille à trois dimensions.  <a href="data_8h.html#ab9364df96978352d359cefb23e603751">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab9364df96978352d359cefb23e603751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49aa4581d57398befb8330a0d826ef09"><td class="memItemLeft" align="right" valign="top">char ***&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data_8h.html#a49aa4581d57398befb8330a0d826ef09">Data__cellNextGen</a> (<a class="el" href="structData.html">Data</a> *self, int begin, int end)</td></tr>
+<tr class="memdesc:a49aa4581d57398befb8330a0d826ef09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant de déterminer le pattern de la nouvelle génération de cellules.  <a href="data_8h.html#a49aa4581d57398befb8330a0d826ef09">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a49aa4581d57398befb8330a0d826ef09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f4729a4a862df2c40f505a54e3dd1d"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data_8h.html#a36f4729a4a862df2c40f505a54e3dd1d">Data__gridToData</a> (char ***grid, int gridSize, int nbPlanes, int begin, int end)</td></tr>
+<tr class="memdesc:a36f4729a4a862df2c40f505a54e3dd1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant de transformer la grille contenant la nouvelle génération de cellules en données sous la forme d'une chaine de caractères.  <a href="data_8h.html#a36f4729a4a862df2c40f505a54e3dd1d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a36f4729a4a862df2c40f505a54e3dd1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af78f2512002ce23341f0700b3f82d1f2"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data_8h.html#af78f2512002ce23341f0700b3f82d1f2">Data__setNewGen</a> (<a class="el" href="structData.html">Data</a> *self, int rank, int nbProc)</td></tr>
+<tr class="memdesc:af78f2512002ce23341f0700b3f82d1f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction combinant la détermination de la nouvelle génération de cellules et le passage de cette nouvelle génération d'une grille à 3 dimensions vers une chaine de caractères.  <a href="data_8h.html#af78f2512002ce23341f0700b3f82d1f2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af78f2512002ce23341f0700b3f82d1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac603cad1499f4fed606f4c48a20601b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data_8h.html#ac603cad1499f4fed606f4c48a20601b8">Data__destroy</a> (<a class="el" href="structData.html">Data</a> **self)</td></tr>
+<tr class="memdesc:ac603cad1499f4fed606f4c48a20601b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur d'une instance de <a class="el" href="structData.html" title="Objet regroupant les données reçues par le processus 0.">Data</a>.  <a href="data_8h.html#ac603cad1499f4fed606f4c48a20601b8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac603cad1499f4fed606f4c48a20601b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Gestion des données envoyées par le processus 0 et reçues par tous les autres processuss. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Richard Leestmans </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>11 Décembre 2022</dd></dl>
+<p>Partie du programme utilisée uniquement par les processuss autres que le processus 0 et qui permet à ces derniers de décrypter les données envoyées par le processus 0, de les traiter, puis de renvoyer au processus 0 les résultats de ces traitements. </p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a49aa4581d57398befb8330a0d826ef09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49aa4581d57398befb8330a0d826ef09">&#9670;&nbsp;</a></span>Data__cellNextGen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char*** Data__cellNextGen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structData.html">Data</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant de déterminer le pattern de la nouvelle génération de cellules. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance d'un objet <a class="el" href="structData.html" title="Objet regroupant les données reçues par le processus 0.">Data</a> contenant le pattern de la génération de cellules actuelle </td></tr>
+    <tr><td class="paramname">begin</td><td>indice du premier feuillet sur lequel déterminer la génération de cellules suivantes </td></tr>
+    <tr><td class="paramname">end</td><td>indice du dernier feuillet sur lequel déterminer la génération de cellules suivantes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Une grille à 3 dimensions contenant la nouvelle génération de cellules </dd></dl>
+
+</div>
+</div>
+<a id="aa96bf4865237acdad0d1aefc35df9bd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa96bf4865237acdad0d1aefc35df9bd9">&#9670;&nbsp;</a></span>Data__create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structData.html">Data</a>* Data__create </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur de l'objet <a class="el" href="structData.html" title="Objet regroupant les données reçues par le processus 0.">Data</a> permettant de regrouper les informations envoyées par le processus 0. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Chaine de caractères contenant l'ensemble des données envoyées par le processus 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Instance nouvelle allouée d'un objet de type <a class="el" href="structData.html" title="Objet regroupant les données reçues par le processus 0.">Data</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab9364df96978352d359cefb23e603751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9364df96978352d359cefb23e603751">&#9670;&nbsp;</a></span>Data__dataToGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Data__dataToGrid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structData.html">Data</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant de stocker des données contenues dans une chaine de caractères dans une grille à trois dimensions. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance d'un objet <a class="el" href="structData.html" title="Objet regroupant les données reçues par le processus 0.">Data</a> contenant la grille dans laquelle stocker les données </td></tr>
+    <tr><td class="paramname">data</td><td>Données à stocker dans la grille </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac603cad1499f4fed606f4c48a20601b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac603cad1499f4fed606f4c48a20601b8">&#9670;&nbsp;</a></span>Data__destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Data__destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structData.html">Data</a> **&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructeur d'une instance de <a class="el" href="structData.html" title="Objet regroupant les données reçues par le processus 0.">Data</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Adresse de l'instance à détruire </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a07efff64d9a00cba9a1d44d6ea114799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07efff64d9a00cba9a1d44d6ea114799">&#9670;&nbsp;</a></span>Data__getGridSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Data__getGridSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structData.html">Data</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur sur la taille de la grille. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance d'un objet <a class="el" href="structData.html" title="Objet regroupant les données reçues par le processus 0.">Data</a> dans lequel récupérer la taille de la grille </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>La taille de la grille, c'est-à-dire la longueur d'un des côtés du cube </dd></dl>
+
+</div>
+</div>
+<a id="a36f4729a4a862df2c40f505a54e3dd1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36f4729a4a862df2c40f505a54e3dd1d">&#9670;&nbsp;</a></span>Data__gridToData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* Data__gridToData </td>
+          <td>(</td>
+          <td class="paramtype">char ***&#160;</td>
+          <td class="paramname"><em>grid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbPlanes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant de transformer la grille contenant la nouvelle génération de cellules en données sous la forme d'une chaine de caractères. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grid</td><td>Grille contenant la nouvelle génération de cellules </td></tr>
+    <tr><td class="paramname">gridSize</td><td>Taille de la grille (ici la longueur des côtés du cube selon les axes y et z) </td></tr>
+    <tr><td class="paramname">nbPlanes</td><td>Nombre de plans de la grille (la longueur des côtés du cube selon l'axe x) </td></tr>
+    <tr><td class="paramname">begin</td><td>Borne inférieure de l'intervalle des plans (feuillets) à stocker dans les données à retourner </td></tr>
+    <tr><td class="paramname">end</td><td>Borne supérieure de l'intervalle des plans (feuillets) à stocker dans les données à retourner </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Les données résultantes contenues dans une chaine de caractères </dd></dl>
+
+</div>
+</div>
+<a id="af78f2512002ce23341f0700b3f82d1f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af78f2512002ce23341f0700b3f82d1f2">&#9670;&nbsp;</a></span>Data__setNewGen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* Data__setNewGen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structData.html">Data</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rank</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbProc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction combinant la détermination de la nouvelle génération de cellules et le passage de cette nouvelle génération d'une grille à 3 dimensions vers une chaine de caractères. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance d'un objet <a class="el" href="structData.html" title="Objet regroupant les données reçues par le processus 0.">Data</a> contenant la grille à partir de laquelle on détermine la nouvelle génération de cellules </td></tr>
+    <tr><td class="paramname">rank</td><td>Rang du processus </td></tr>
+    <tr><td class="paramname">nbProc</td><td>Nombre total de processuss utilisés lors de l'exécution du programme </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Les données, contenues dans une chaine de caractères, à renvoyer au processus 0 </dd></dl>
+
+</div>
+</div>
+<a id="a2a7c462fa57fba89ecadbb0b338e39b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a7c462fa57fba89ecadbb0b338e39b2">&#9670;&nbsp;</a></span>Data__storeData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Data__storeData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structData.html">Data</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant de stocker les différentes informations contenues dans les données, envoyées par le processus 0, dans les attributs de la structure. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance d'un objet <a class="el" href="structData.html" title="Objet regroupant les données reçues par le processus 0.">Data</a> dans lequel stocker les informations contenues dans les données envoyées par le processus 0 </td></tr>
+    <tr><td class="paramname">data</td><td>Données envoyées par le processus 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="data_8h.html">data.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

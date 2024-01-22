@@ -1,0 +1,772 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Le jeu de la vie 3D avec MPI: Référence du fichier grid.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Le jeu de la vie 3D avec MPI
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('grid_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier grid.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Gestion de tout ce qui touche aux générations de cellules géré par le processus 0.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de grid.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="grid_8h__incl.png" border="0" usemap="#agrid_8h" alt=""/></div>
+<map name="agrid_8h" id="agrid_8h">
+<area shape="rect" title="Gestion de tout ce qui touche aux générations de cellules géré par le processus 0." alt="" coords="95,5,150,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,67,107"/>
+<area shape="rect" title=" " alt="" coords="91,80,155,107"/>
+<area shape="rect" title=" " alt="" coords="179,80,245,107"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="grid_8h__dep__incl.png" border="0" usemap="#agrid_8hdep" alt=""/></div>
+<map name="agrid_8hdep" id="agrid_8hdep">
+<area shape="rect" title="Gestion de tout ce qui touche aux générations de cellules géré par le processus 0." alt="" coords="26,5,81,32"/>
+<area shape="rect" href="file__results_8h.html" title="Gestion du stockage des résultats du programme." alt="" coords="5,80,101,107"/>
+</map>
+</div>
+</div>
+<p><a href="grid_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGrid.html">Grid</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée, par le processus 0.  <a href="structGrid.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a9313c060e5006122fdcca4337c9a854a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGrid.html">Grid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#a9313c060e5006122fdcca4337c9a854a">Grid__create</a> (int typeOfAnalysis, char *rule, int nbGenerations, int nbProc)</td></tr>
+<tr class="memdesc:a9313c060e5006122fdcca4337c9a854a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de l'objet <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a> où sont initialisés les contenus des attributs de la structure.  <a href="grid_8h.html#a9313c060e5006122fdcca4337c9a854a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9313c060e5006122fdcca4337c9a854a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d2a91ff4310baf391babcac7ff8e38"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#af9d2a91ff4310baf391babcac7ff8e38">Grid__getGridSize</a> (<a class="el" href="structGrid.html">Grid</a> *self)</td></tr>
+<tr class="memdesc:af9d2a91ff4310baf391babcac7ff8e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur sur la taille de la grille contenant les cellules.  <a href="grid_8h.html#af9d2a91ff4310baf391babcac7ff8e38">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af9d2a91ff4310baf391babcac7ff8e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a1dffa05bf26bb0d7a557f2a87e2a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#a86a1dffa05bf26bb0d7a557f2a87e2a8">Grid__setGridSize</a> (<a class="el" href="structGrid.html">Grid</a> *self, int gridSize)</td></tr>
+<tr class="memdesc:a86a1dffa05bf26bb0d7a557f2a87e2a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutateur sur la taille de la grille contenant les cellules.  <a href="grid_8h.html#a86a1dffa05bf26bb0d7a557f2a87e2a8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a86a1dffa05bf26bb0d7a557f2a87e2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abebfcb8c8f5485d744c99cec9b07ce5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#abebfcb8c8f5485d744c99cec9b07ce5d">Grid__setTasksPerProc</a> (<a class="el" href="structGrid.html">Grid</a> *self, int *tasksPerProc)</td></tr>
+<tr class="memdesc:abebfcb8c8f5485d744c99cec9b07ce5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutateur sur le nombre de plans (feuillets) à affecter à chaque processus autre que le processus 0.  <a href="grid_8h.html#abebfcb8c8f5485d744c99cec9b07ce5d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:abebfcb8c8f5485d744c99cec9b07ce5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b382deb662500edc39be2823e0828fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#a7b382deb662500edc39be2823e0828fe">Grid__getNbGeneration</a> (<a class="el" href="structGrid.html">Grid</a> *self)</td></tr>
+<tr class="memdesc:a7b382deb662500edc39be2823e0828fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur sur le nombre maximal de générations autorisées pour une analyse.  <a href="grid_8h.html#a7b382deb662500edc39be2823e0828fe">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7b382deb662500edc39be2823e0828fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15df10c3eed3de32538078a222a25d6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#a15df10c3eed3de32538078a222a25d6d">Grid__fillGrid</a> (<a class="el" href="structGrid.html">Grid</a> *self)</td></tr>
+<tr class="memdesc:a15df10c3eed3de32538078a222a25d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant de remplir la grille de cellules NGeneration en fonction de la seed utilisée.  <a href="grid_8h.html#a15df10c3eed3de32538078a222a25d6d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a15df10c3eed3de32538078a222a25d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c1386e080209fb6f6fa987b11f4b68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#ab3c1386e080209fb6f6fa987b11f4b68">Grid__displayGrid</a> (char ***currentGen, int gridSize, int nbPlanes)</td></tr>
+<tr class="memdesc:ab3c1386e080209fb6f6fa987b11f4b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant d'afficher une génération de cellules contenue dans une grille.  <a href="grid_8h.html#ab3c1386e080209fb6f6fa987b11f4b68">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab3c1386e080209fb6f6fa987b11f4b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa93f36b3c02b20479cc543b9f881e9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#aaa93f36b3c02b20479cc543b9f881e9b">Grid__setToDefault</a> (<a class="el" href="structGrid.html">Grid</a> *self)</td></tr>
+<tr class="memdesc:aaa93f36b3c02b20479cc543b9f881e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant de remettre à zéro le contenu des grilles de cellules NGeneration, NMinusOneGeneration et NMinusTwoGeneration.  <a href="grid_8h.html#aaa93f36b3c02b20479cc543b9f881e9b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aaa93f36b3c02b20479cc543b9f881e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d04871010b3a7cd0b6abfbb4758f5ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#a1d04871010b3a7cd0b6abfbb4758f5ce">Grid__compareGen</a> (<a class="el" href="structGrid.html">Grid</a> *self, char ***newGen)</td></tr>
+<tr class="memdesc:a1d04871010b3a7cd0b6abfbb4758f5ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant de comparer une génération de cellules avec toutes celles stockées en mémoire dans une instance d'un objet <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a>.  <a href="grid_8h.html#a1d04871010b3a7cd0b6abfbb4758f5ce">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1d04871010b3a7cd0b6abfbb4758f5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1beff7afdb73c3a35befdd7909cfe3dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#a1beff7afdb73c3a35befdd7909cfe3dd">Grid__isEmpty</a> (char ***newGen, int gridSize)</td></tr>
+<tr class="memdesc:a1beff7afdb73c3a35befdd7909cfe3dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant de vérifier si une grille de cellules est vide, c'est-à-dire si elle ne contient que des cellules mortes.  <a href="grid_8h.html#a1beff7afdb73c3a35befdd7909cfe3dd">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1beff7afdb73c3a35befdd7909cfe3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d782cf4074afc615f20c225e6de0bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#a90d782cf4074afc615f20c225e6de0bf">Grid__levelIsEmpty</a> (char **level, int gridSize)</td></tr>
+<tr class="memdesc:a90d782cf4074afc615f20c225e6de0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant de vérifier si un plan (ou feuillet) de cellules est vide, c'est-à-dire si elle ne contient que des cellules mortes.  <a href="grid_8h.html#a90d782cf4074afc615f20c225e6de0bf">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a90d782cf4074afc615f20c225e6de0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2316ba562077ca8d023abfa0a85acf29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#a2316ba562077ca8d023abfa0a85acf29">Grid__updatePatterns</a> (<a class="el" href="structGrid.html">Grid</a> *self, char ***newGen)</td></tr>
+<tr class="memdesc:a2316ba562077ca8d023abfa0a85acf29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant de mettre à jour les générations de cellules stockées en mémoire en fonction en fonction de la nouvelle passée en paramètre.  <a href="grid_8h.html#a2316ba562077ca8d023abfa0a85acf29">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2316ba562077ca8d023abfa0a85acf29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf08cde9cd71c895bbe71c3c13c626f3"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#acf08cde9cd71c895bbe71c3c13c626f3">Grid__createDataPerProc</a> (<a class="el" href="structGrid.html">Grid</a> *self)</td></tr>
+<tr class="memdesc:acf08cde9cd71c895bbe71c3c13c626f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui va découper la grille contenant la génération de cellules et générer, pour chaque processus, un datagramme, sous la forme d'une chaine de caractères, contenant toutes les informations pour que le processus le recevant puisser analyser les données à l'intérieur.  <a href="grid_8h.html#acf08cde9cd71c895bbe71c3c13c626f3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acf08cde9cd71c895bbe71c3c13c626f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac038bc2faebbc36e9dce87c1f31a18bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#ac038bc2faebbc36e9dce87c1f31a18bf">Grid__initializeReceivedDataTab</a> (<a class="el" href="structGrid.html">Grid</a> *self)</td></tr>
+<tr class="memdesc:ac038bc2faebbc36e9dce87c1f31a18bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant d'initialiser le tableau receivedData servant à stocker dans chacun de ses buffers les résultats reçus par chaque processus.  <a href="grid_8h.html#ac038bc2faebbc36e9dce87c1f31a18bf">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac038bc2faebbc36e9dce87c1f31a18bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab786313a399b883ff4cc8c7de3a642d"><td class="memItemLeft" align="right" valign="top">char ***&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#aab786313a399b883ff4cc8c7de3a642d">Grid__dataToGrid</a> (<a class="el" href="structGrid.html">Grid</a> *self)</td></tr>
+<tr class="memdesc:aab786313a399b883ff4cc8c7de3a642d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant de transformer les résultats reçus par le processus 0 sous la forme de chaines de caractères en grille de cellules à trois dimensions.  <a href="grid_8h.html#aab786313a399b883ff4cc8c7de3a642d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aab786313a399b883ff4cc8c7de3a642d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34ec03dcea3cfdf846265206feb51fa"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#ab34ec03dcea3cfdf846265206feb51fa">Grid__analyzePattern</a> (<a class="el" href="structGrid.html">Grid</a> *self)</td></tr>
+<tr class="memdesc:ab34ec03dcea3cfdf846265206feb51fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction généraliste regroupant une grosse partie du processus du processus 0, de la création de datagrammes à partir du découpage de la grille, à la comparaison de la nouvelle génération de cellules avec celles déjà stockées en mémoire, en passant par la récupération des résultats des autres processuss grâce à MPI et la création de la grille de la nouvelle génération à partir de ces résultats.  <a href="grid_8h.html#ab34ec03dcea3cfdf846265206feb51fa">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab34ec03dcea3cfdf846265206feb51fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e3274bb0bd3efc9d73ca44ee7becf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grid_8h.html#a01e3274bb0bd3efc9d73ca44ee7becf9">Grid__destroy</a> (<a class="el" href="structGrid.html">Grid</a> **self)</td></tr>
+<tr class="memdesc:a01e3274bb0bd3efc9d73ca44ee7becf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur d'une instance de <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a>.  <a href="grid_8h.html#a01e3274bb0bd3efc9d73ca44ee7becf9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a01e3274bb0bd3efc9d73ca44ee7becf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Gestion de tout ce qui touche aux générations de cellules géré par le processus 0. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Richard Leestmans </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>11 Décembre 2022</dd></dl>
+<p>Partie du programme de tout ce qui touche à la gestion des générations de cellules effectuée par le processus 0. On va notamment pouvoir y générer la première génération de cellules pour une seed donnée, découper la grille de cellules en multiples fragments à envoyer à tous les autres processuss, récupérer les résultats de ces processuss, reconstruire une grille à partir des données récupérées, comparer cette grille avec les grilles des anciennes générations, et obtenir un résultat en fonction de ces comparaisons. </p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ab34ec03dcea3cfdf846265206feb51fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab34ec03dcea3cfdf846265206feb51fa">&#9670;&nbsp;</a></span>Grid__analyzePattern()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int* Grid__analyzePattern </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structGrid.html">Grid</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction généraliste regroupant une grosse partie du processus du processus 0, de la création de datagrammes à partir du découpage de la grille, à la comparaison de la nouvelle génération de cellules avec celles déjà stockées en mémoire, en passant par la récupération des résultats des autres processuss grâce à MPI et la création de la grille de la nouvelle génération à partir de ces résultats. </p>
+<p>Et tout ceci pour toutes les générations d'une seed et une taille de grille donnée.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance d'un objet <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a> qui va servir à réaliser tout le processus cité ci-dessus. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un tableau de résultats contenant deux valeurs. La première est un entier parmi les valeurs suivantes en fonction du résultat: 0 -&gt; pas de configuration stable trouvée car plus de cellules vivantes; 1 -&gt; configuration stable trouvée; 2 -&gt; configuration oscillatoire de période 2; 3 -&gt; configuration oscillatoire de période 3; 4 -&gt; pas de configuration stable trouvée pour le nombre de générations choisi. La seconde valeur du tableau des résultats correspond à la génération à partir de laquelle la première valeur a été obtenue. </dd></dl>
+
+</div>
+</div>
+<a id="a1d04871010b3a7cd0b6abfbb4758f5ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d04871010b3a7cd0b6abfbb4758f5ce">&#9670;&nbsp;</a></span>Grid__compareGen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Grid__compareGen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structGrid.html">Grid</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char ***&#160;</td>
+          <td class="paramname"><em>newGen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant de comparer une génération de cellules avec toutes celles stockées en mémoire dans une instance d'un objet <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance de <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a> contenant les grilles de cellules des générations antérieures </td></tr>
+    <tr><td class="paramname">newGen</td><td>Grille de générations de cellules à comparer avec les générations antérieures </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un entier parmi les valeurs suivantes: 0 -&gt; La nouvelle génération ne correspond à aucune génération stockée en mémoire; 1 -&gt; La nouvelle génération correspond à la dernière génération stockée en mémoire (dans NGeneration); 2 -&gt; La nouvelle génération correspond à l'avant-dernière génération stockée en mémoire (dans NMinusOneGeneration); 3 -&gt; La nouvelle génération correspond à l'antépénultième génération stockée en mémoire (dans NMinusTwoGeneration). </dd></dl>
+
+</div>
+</div>
+<a id="a9313c060e5006122fdcca4337c9a854a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9313c060e5006122fdcca4337c9a854a">&#9670;&nbsp;</a></span>Grid__create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structGrid.html">Grid</a>* Grid__create </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>typeOfAnalysis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>rule</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbGenerations</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbProc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur de l'objet <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a> où sont initialisés les contenus des attributs de la structure. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">typeOfAnalysis</td><td>Type de l'analyse </td></tr>
+    <tr><td class="paramname">rule</td><td>Règle de l'analyse </td></tr>
+    <tr><td class="paramname">nbGenerations</td><td>Nombre maximal de générations à effectuer lors de l'analyse </td></tr>
+    <tr><td class="paramname">nbProc</td><td>Nombre total de processuss utilisés lors de l'exécution du programme </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Instance nouvelle allouée d'un objet de type <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a> </dd></dl>
+
+</div>
+</div>
+<a id="acf08cde9cd71c895bbe71c3c13c626f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf08cde9cd71c895bbe71c3c13c626f3">&#9670;&nbsp;</a></span>Grid__createDataPerProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char** Grid__createDataPerProc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structGrid.html">Grid</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui va découper la grille contenant la génération de cellules et générer, pour chaque processus, un datagramme, sous la forme d'une chaine de caractères, contenant toutes les informations pour que le processus le recevant puisser analyser les données à l'intérieur. </p>
+<p>Le datagramme sera de la forme: modèle_taille de la grille_taille des données_données Exemple : 5766_3_18_011000100110011101</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance d'un objet <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a> contenant la grille de cellules à découper </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un tableau contenant l'ensemble des datagrammes destinés à tous les autres processuss du programme </dd></dl>
+
+</div>
+</div>
+<a id="aab786313a399b883ff4cc8c7de3a642d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab786313a399b883ff4cc8c7de3a642d">&#9670;&nbsp;</a></span>Grid__dataToGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char*** Grid__dataToGrid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structGrid.html">Grid</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant de transformer les résultats reçus par le processus 0 sous la forme de chaines de caractères en grille de cellules à trois dimensions. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance d'un objet <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a> contenant le tableau de résultats </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>La grille de cellules à 3 dimensions créée à partir des résultats obtenus </dd></dl>
+
+</div>
+</div>
+<a id="a01e3274bb0bd3efc9d73ca44ee7becf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01e3274bb0bd3efc9d73ca44ee7becf9">&#9670;&nbsp;</a></span>Grid__destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grid__destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structGrid.html">Grid</a> **&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructeur d'une instance de <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Adresse d'un objet de <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a> à détruire </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab3c1386e080209fb6f6fa987b11f4b68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3c1386e080209fb6f6fa987b11f4b68">&#9670;&nbsp;</a></span>Grid__displayGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grid__displayGrid </td>
+          <td>(</td>
+          <td class="paramtype">char ***&#160;</td>
+          <td class="paramname"><em>currentGen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbPlanes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant d'afficher une génération de cellules contenue dans une grille. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">currentGen</td><td>Grille contenant la génération de cellules à afficher </td></tr>
+    <tr><td class="paramname">gridSize</td><td>Taille de la grille (ici, la longueur des côtés de la grille selon les axes y et z) </td></tr>
+    <tr><td class="paramname">nbPlanes</td><td>Nombre de plans de la grille (la longueur des côtés de la grille selon l'axe x) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a15df10c3eed3de32538078a222a25d6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15df10c3eed3de32538078a222a25d6d">&#9670;&nbsp;</a></span>Grid__fillGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grid__fillGrid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structGrid.html">Grid</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant de remplir la grille de cellules NGeneration en fonction de la seed utilisée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance d'un objet <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a> contenant la grille de cellules NGeneration à remplir </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af9d2a91ff4310baf391babcac7ff8e38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9d2a91ff4310baf391babcac7ff8e38">&#9670;&nbsp;</a></span>Grid__getGridSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Grid__getGridSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structGrid.html">Grid</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur sur la taille de la grille contenant les cellules. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance d'un objet <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a> contenant la taille de grille à retourner </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Taille de la grille contenue dans l'instance de <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7b382deb662500edc39be2823e0828fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b382deb662500edc39be2823e0828fe">&#9670;&nbsp;</a></span>Grid__getNbGeneration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Grid__getNbGeneration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structGrid.html">Grid</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur sur le nombre maximal de générations autorisées pour une analyse. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance d'un objet <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a> contenant le nombre maximal de générations </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le nombre maximal de générations contenu dans l'instance passée en paramètre </dd></dl>
+
+</div>
+</div>
+<a id="ac038bc2faebbc36e9dce87c1f31a18bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac038bc2faebbc36e9dce87c1f31a18bf">&#9670;&nbsp;</a></span>Grid__initializeReceivedDataTab()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grid__initializeReceivedDataTab </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structGrid.html">Grid</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant d'initialiser le tableau receivedData servant à stocker dans chacun de ses buffers les résultats reçus par chaque processus. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance d'un objet <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a> contenant le tableau de résultats à initialiser </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1beff7afdb73c3a35befdd7909cfe3dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1beff7afdb73c3a35befdd7909cfe3dd">&#9670;&nbsp;</a></span>Grid__isEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Grid__isEmpty </td>
+          <td>(</td>
+          <td class="paramtype">char ***&#160;</td>
+          <td class="paramname"><em>newGen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant de vérifier si une grille de cellules est vide, c'est-à-dire si elle ne contient que des cellules mortes. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newGen</td><td>Grille de cellules à vérifier </td></tr>
+    <tr><td class="paramname">gridSize</td><td>Taille de la grille, c'est-à-dire la longueur d'un des côtés de la grille de cellules </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la grille de cellules est vide 0 sinon </dd></dl>
+
+</div>
+</div>
+<a id="a90d782cf4074afc615f20c225e6de0bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90d782cf4074afc615f20c225e6de0bf">&#9670;&nbsp;</a></span>Grid__levelIsEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Grid__levelIsEmpty </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant de vérifier si un plan (ou feuillet) de cellules est vide, c'est-à-dire si elle ne contient que des cellules mortes. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>Feuillet de cellules à vérifier </td></tr>
+    <tr><td class="paramname">gridSize</td><td>Taille de la grille, c'est-à-dire la longueur d'un des côtés de la grille de cellules (ici la longueur d'un des côtés du feuillet) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la feuillet de cellules est vide 0 sinon </dd></dl>
+
+</div>
+</div>
+<a id="a86a1dffa05bf26bb0d7a557f2a87e2a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86a1dffa05bf26bb0d7a557f2a87e2a8">&#9670;&nbsp;</a></span>Grid__setGridSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grid__setGridSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structGrid.html">Grid</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mutateur sur la taille de la grille contenant les cellules. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance d'un objet <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a> contenant la taille de grille à modifier </td></tr>
+    <tr><td class="paramname">gridSize</td><td>Nouvelle taille de grille </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abebfcb8c8f5485d744c99cec9b07ce5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abebfcb8c8f5485d744c99cec9b07ce5d">&#9670;&nbsp;</a></span>Grid__setTasksPerProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grid__setTasksPerProc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structGrid.html">Grid</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>tasksPerProc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mutateur sur le nombre de plans (feuillets) à affecter à chaque processus autre que le processus 0. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance d'un objet <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a> contenant le tableau du nombre de plans de chaque processus à modifier </td></tr>
+    <tr><td class="paramname">tasksPerProc</td><td>Nouveau tableau du nombre de plans à affecter à chaque processus </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaa93f36b3c02b20479cc543b9f881e9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa93f36b3c02b20479cc543b9f881e9b">&#9670;&nbsp;</a></span>Grid__setToDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grid__setToDefault </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structGrid.html">Grid</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant de remettre à zéro le contenu des grilles de cellules NGeneration, NMinusOneGeneration et NMinusTwoGeneration. </p>
+<p>En d'autres termes, la fonction va libérer l'espace mémoire occupé par ces différentes grilles.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance de <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a> contenant les grilles de cellules à remettre à zéro </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2316ba562077ca8d023abfa0a85acf29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2316ba562077ca8d023abfa0a85acf29">&#9670;&nbsp;</a></span>Grid__updatePatterns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grid__updatePatterns </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structGrid.html">Grid</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char ***&#160;</td>
+          <td class="paramname"><em>newGen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant de mettre à jour les générations de cellules stockées en mémoire en fonction en fonction de la nouvelle passée en paramètre. </p>
+<p>En d'autres termes, la grille de cellules NGeneration va contenir la nouvelle génération de cellules et on va décaler toutes les générations déjà présentes en mémoire d'un cran vers les générations plus antérieures.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Instance d'un objet <a class="el" href="structGrid.html" title="Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...">Grid</a> contenant les grilles de cellules à mettre à jour </td></tr>
+    <tr><td class="paramname">newGen</td><td>Nouvelle génération de cellules à stocker en mémoire </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="grid_8h.html">grid.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

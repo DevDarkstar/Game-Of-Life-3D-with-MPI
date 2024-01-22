@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Le jeu de la vie 3D avec MPI: Variables globale</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Le jeu de la vie 3D avec MPI
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('globals.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="contents">
+<div class="textblock">Liste de toutes les fonctions, variables, macros, enumérations, et définitions de type documentés avec des liens vers la documentation :</div>
+
+<h3><a id="index_c"></a>- c -</h3><ul>
+<li>Configuration__create()
+: <a class="el" href="configuration_8h.html#a254094833be2cf24fae6aac95d03fe16">configuration.h</a>
+</li>
+<li>Configuration__createDataRangeAnalysis()
+: <a class="el" href="configuration_8h.html#a85d6f4fb58a9c87649b9fae0e7eda70e">configuration.h</a>
+</li>
+<li>Configuration__createSingleAnalysis()
+: <a class="el" href="configuration_8h.html#ae9ade52a39fbd41f18d1bfebdb153fe4">configuration.h</a>
+</li>
+<li>Configuration__destroy()
+: <a class="el" href="configuration_8h.html#ad61a23065fb9ba35f252a140999fb8cd">configuration.h</a>
+</li>
+<li>Configuration__isANumber()
+: <a class="el" href="configuration_8h.html#a1e9c63da34d6579cdf1b3e0da0a47997">configuration.h</a>
+</li>
+<li>Configuration__resetNumOfTasks()
+: <a class="el" href="configuration_8h.html#ad0c67d6c273cff37c172fd8f12d62c52">configuration.h</a>
+</li>
+<li>Configuration__setParameters()
+: <a class="el" href="configuration_8h.html#a4638a10835be1447ae68231c6ec68cc6">configuration.h</a>
+</li>
+<li>Configuration__setTasksPerProc()
+: <a class="el" href="configuration_8h.html#aabbf1726dc64c90b8c92f2a72d30c72c">configuration.h</a>
+</li>
+</ul>
+
+
+<h3><a id="index_d"></a>- d -</h3><ul>
+<li>Data__cellNextGen()
+: <a class="el" href="data_8h.html#a49aa4581d57398befb8330a0d826ef09">data.h</a>
+</li>
+<li>Data__create()
+: <a class="el" href="data_8h.html#aa96bf4865237acdad0d1aefc35df9bd9">data.h</a>
+</li>
+<li>Data__dataToGrid()
+: <a class="el" href="data_8h.html#ab9364df96978352d359cefb23e603751">data.h</a>
+</li>
+<li>Data__destroy()
+: <a class="el" href="data_8h.html#ac603cad1499f4fed606f4c48a20601b8">data.h</a>
+</li>
+<li>Data__getGridSize()
+: <a class="el" href="data_8h.html#a07efff64d9a00cba9a1d44d6ea114799">data.h</a>
+</li>
+<li>Data__gridToData()
+: <a class="el" href="data_8h.html#a36f4729a4a862df2c40f505a54e3dd1d">data.h</a>
+</li>
+<li>Data__setNewGen()
+: <a class="el" href="data_8h.html#af78f2512002ce23341f0700b3f82d1f2">data.h</a>
+</li>
+<li>Data__storeData()
+: <a class="el" href="data_8h.html#a2a7c462fa57fba89ecadbb0b338e39b2">data.h</a>
+</li>
+</ul>
+
+
+<h3><a id="index_f"></a>- f -</h3><ul>
+<li>FileResults__create()
+: <a class="el" href="file__results_8h.html#a257d61e3d299e304fd75a949f3d33804">file_results.h</a>
+</li>
+<li>FileResults__createResultTable()
+: <a class="el" href="file__results_8h.html#afcd92d526456da4ff3df596fd4390bb3">file_results.h</a>
+</li>
+<li>FileResults__destroy()
+: <a class="el" href="file__results_8h.html#a685e62cf232ee24137913de545f6e38d">file_results.h</a>
+</li>
+<li>FileResults__exportResults()
+: <a class="el" href="file__results_8h.html#a41282b54c962e5a2fe9f027583fa6f5a">file_results.h</a>
+</li>
+<li>FileResults__storePattern()
+: <a class="el" href="file__results_8h.html#a6eb108ce31ad7dc926fe149b414316f9">file_results.h</a>
+</li>
+<li>FileResults__storeResults()
+: <a class="el" href="file__results_8h.html#a33b491bf5b0884686d721f4f6b02a112">file_results.h</a>
+</li>
+</ul>
+
+
+<h3><a id="index_g"></a>- g -</h3><ul>
+<li>Grid__analyzePattern()
+: <a class="el" href="grid_8h.html#ab34ec03dcea3cfdf846265206feb51fa">grid.h</a>
+</li>
+<li>Grid__compareGen()
+: <a class="el" href="grid_8h.html#a1d04871010b3a7cd0b6abfbb4758f5ce">grid.h</a>
+</li>
+<li>Grid__create()
+: <a class="el" href="grid_8h.html#a9313c060e5006122fdcca4337c9a854a">grid.h</a>
+</li>
+<li>Grid__createDataPerProc()
+: <a class="el" href="grid_8h.html#acf08cde9cd71c895bbe71c3c13c626f3">grid.h</a>
+</li>
+<li>Grid__dataToGrid()
+: <a class="el" href="grid_8h.html#aab786313a399b883ff4cc8c7de3a642d">grid.h</a>
+</li>
+<li>Grid__destroy()
+: <a class="el" href="grid_8h.html#a01e3274bb0bd3efc9d73ca44ee7becf9">grid.h</a>
+</li>
+<li>Grid__displayGrid()
+: <a class="el" href="grid_8h.html#ab3c1386e080209fb6f6fa987b11f4b68">grid.h</a>
+</li>
+<li>Grid__fillGrid()
+: <a class="el" href="grid_8h.html#a15df10c3eed3de32538078a222a25d6d">grid.h</a>
+</li>
+<li>Grid__getGridSize()
+: <a class="el" href="grid_8h.html#af9d2a91ff4310baf391babcac7ff8e38">grid.h</a>
+</li>
+<li>Grid__getNbGeneration()
+: <a class="el" href="grid_8h.html#a7b382deb662500edc39be2823e0828fe">grid.h</a>
+</li>
+<li>Grid__initializeReceivedDataTab()
+: <a class="el" href="grid_8h.html#ac038bc2faebbc36e9dce87c1f31a18bf">grid.h</a>
+</li>
+<li>Grid__isEmpty()
+: <a class="el" href="grid_8h.html#a1beff7afdb73c3a35befdd7909cfe3dd">grid.h</a>
+</li>
+<li>Grid__levelIsEmpty()
+: <a class="el" href="grid_8h.html#a90d782cf4074afc615f20c225e6de0bf">grid.h</a>
+</li>
+<li>Grid__setGridSize()
+: <a class="el" href="grid_8h.html#a86a1dffa05bf26bb0d7a557f2a87e2a8">grid.h</a>
+</li>
+<li>Grid__setTasksPerProc()
+: <a class="el" href="grid_8h.html#abebfcb8c8f5485d744c99cec9b07ce5d">grid.h</a>
+</li>
+<li>Grid__setToDefault()
+: <a class="el" href="grid_8h.html#aaa93f36b3c02b20479cc543b9f881e9b">grid.h</a>
+</li>
+<li>Grid__updatePatterns()
+: <a class="el" href="grid_8h.html#a2316ba562077ca8d023abfa0a85acf29">grid.h</a>
+</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

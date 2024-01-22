@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Le jeu de la vie 3D avec MPI:  Fichier source de grid.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Le jeu de la vie 3D avec MPI
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('grid_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">grid.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="grid_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GRID_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GRID_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structGrid.html">   28</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structGrid.html#a26e9079eaeb440a1a3ce96b3b704fb70">   30</a></span>&#160;    <span class="keywordtype">char</span>*** <a class="code" href="structGrid.html#a26e9079eaeb440a1a3ce96b3b704fb70">NGeneration</a>; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structGrid.html#a0733db032bba45785738229979aacdeb">   31</a></span>&#160;    <span class="keywordtype">char</span>*** <a class="code" href="structGrid.html#a0733db032bba45785738229979aacdeb">NMinusOneGeneration</a>; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structGrid.html#ade98611b7b50d2cd32735c2ae6a7e4ed">   32</a></span>&#160;    <span class="keywordtype">char</span>*** <a class="code" href="structGrid.html#ade98611b7b50d2cd32735c2ae6a7e4ed">NMinusTwoGeneration</a>; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structGrid.html#a2f82a7d9200db023544756d70d738efe">   33</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structGrid.html#a2f82a7d9200db023544756d70d738efe">gridSize</a>; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structGrid.html#a27a1db69b5402db70a469ea731e3a64c">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structGrid.html#a27a1db69b5402db70a469ea731e3a64c">typeOfAnalysis</a>; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structGrid.html#a7e0015c68c7169340c8b6eb802c497c4">   35</a></span>&#160;    <span class="keywordtype">char</span> rule[5]; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structGrid.html#ad9a60e995e448dafd4724187f24493fd">   36</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structGrid.html#ad9a60e995e448dafd4724187f24493fd">nbGenerations</a>; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structGrid.html#a8d8661eeecf05db6575e1c8d0b725fb2">   37</a></span>&#160;    <span class="keywordtype">char</span>** <a class="code" href="structGrid.html#a8d8661eeecf05db6575e1c8d0b725fb2">receivedData</a>; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structGrid.html#a30d2b9d0fa09979aacd9c965a5ed5ecd">   38</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structGrid.html#a30d2b9d0fa09979aacd9c965a5ed5ecd">nbProc</a>; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structGrid.html#a3ea2b3b70f8ffc3ed98466046b3adf82">   39</a></span>&#160;    <span class="keywordtype">int</span>* <a class="code" href="structGrid.html#a3ea2b3b70f8ffc3ed98466046b3adf82">tasksPerProc</a>; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}<a class="code" href="structGrid.html">Grid</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<a class="code" href="structGrid.html">Grid</a>* <a class="code" href="grid_8h.html#a9313c060e5006122fdcca4337c9a854a">Grid__create</a>(<span class="keywordtype">int</span> typeOfAnalysis, <span class="keywordtype">char</span>* rule, <span class="keywordtype">int</span> nbGenerations, <span class="keywordtype">int</span> nbProc);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">int</span> <a class="code" href="grid_8h.html#af9d2a91ff4310baf391babcac7ff8e38">Grid__getGridSize</a>(<a class="code" href="structGrid.html">Grid</a>* <span class="keyword">self</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grid_8h.html#a86a1dffa05bf26bb0d7a557f2a87e2a8">Grid__setGridSize</a>(<a class="code" href="structGrid.html">Grid</a>* <span class="keyword">self</span>, <span class="keywordtype">int</span> gridSize);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grid_8h.html#abebfcb8c8f5485d744c99cec9b07ce5d">Grid__setTasksPerProc</a>(<a class="code" href="structGrid.html">Grid</a>* <span class="keyword">self</span>, <span class="keywordtype">int</span>* tasksPerProc);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">int</span> <a class="code" href="grid_8h.html#a7b382deb662500edc39be2823e0828fe">Grid__getNbGeneration</a>(<a class="code" href="structGrid.html">Grid</a>* <span class="keyword">self</span>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grid_8h.html#a15df10c3eed3de32538078a222a25d6d">Grid__fillGrid</a>(<a class="code" href="structGrid.html">Grid</a>* <span class="keyword">self</span>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grid_8h.html#ab3c1386e080209fb6f6fa987b11f4b68">Grid__displayGrid</a>(<span class="keywordtype">char</span>*** currentGen, <span class="keywordtype">int</span> gridSize, <span class="keywordtype">int</span> nbPlanes);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grid_8h.html#aaa93f36b3c02b20479cc543b9f881e9b">Grid__setToDefault</a>(<a class="code" href="structGrid.html">Grid</a>* <span class="keyword">self</span>);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keywordtype">int</span> <a class="code" href="grid_8h.html#a1d04871010b3a7cd0b6abfbb4758f5ce">Grid__compareGen</a>(<a class="code" href="structGrid.html">Grid</a>* <span class="keyword">self</span>, <span class="keywordtype">char</span>*** newGen);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keywordtype">int</span> <a class="code" href="grid_8h.html#a1beff7afdb73c3a35befdd7909cfe3dd">Grid__isEmpty</a>(<span class="keywordtype">char</span>*** newGen, <span class="keywordtype">int</span> gridSize);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keywordtype">int</span> <a class="code" href="grid_8h.html#a90d782cf4074afc615f20c225e6de0bf">Grid__levelIsEmpty</a>(<span class="keywordtype">char</span>** level, <span class="keywordtype">int</span> gridSize);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grid_8h.html#a2316ba562077ca8d023abfa0a85acf29">Grid__updatePatterns</a>(<a class="code" href="structGrid.html">Grid</a>* <span class="keyword">self</span>, <span class="keywordtype">char</span>*** newGen);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keywordtype">char</span>** <a class="code" href="grid_8h.html#acf08cde9cd71c895bbe71c3c13c626f3">Grid__createDataPerProc</a>(<a class="code" href="structGrid.html">Grid</a>* <span class="keyword">self</span>);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grid_8h.html#ac038bc2faebbc36e9dce87c1f31a18bf">Grid__initializeReceivedDataTab</a>(<a class="code" href="structGrid.html">Grid</a>* <span class="keyword">self</span>);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keywordtype">char</span>*** <a class="code" href="grid_8h.html#aab786313a399b883ff4cc8c7de3a642d">Grid__dataToGrid</a>(<a class="code" href="structGrid.html">Grid</a>* <span class="keyword">self</span>);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keywordtype">int</span>* <a class="code" href="grid_8h.html#ab34ec03dcea3cfdf846265206feb51fa">Grid__analyzePattern</a>(<a class="code" href="structGrid.html">Grid</a>* <span class="keyword">self</span>);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grid_8h.html#a01e3274bb0bd3efc9d73ca44ee7becf9">Grid__destroy</a>(<a class="code" href="structGrid.html">Grid</a>** <span class="keyword">self</span>);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="agrid_8h_html_a01e3274bb0bd3efc9d73ca44ee7becf9"><div class="ttname"><a href="grid_8h.html#a01e3274bb0bd3efc9d73ca44ee7becf9">Grid__destroy</a></div><div class="ttdeci">void Grid__destroy(Grid **self)</div><div class="ttdoc">Destructeur d'une instance de Grid.</div><div class="ttdef"><b>Definition:</b> grid.c:565</div></div>
+<div class="ttc" id="agrid_8h_html_a15df10c3eed3de32538078a222a25d6d"><div class="ttname"><a href="grid_8h.html#a15df10c3eed3de32538078a222a25d6d">Grid__fillGrid</a></div><div class="ttdeci">void Grid__fillGrid(Grid *self)</div><div class="ttdoc">Fonction permettant de remplir la grille de cellules NGeneration en fonction de la seed utilisée.</div><div class="ttdef"><b>Definition:</b> grid.c:44</div></div>
+<div class="ttc" id="agrid_8h_html_a1beff7afdb73c3a35befdd7909cfe3dd"><div class="ttname"><a href="grid_8h.html#a1beff7afdb73c3a35befdd7909cfe3dd">Grid__isEmpty</a></div><div class="ttdeci">int Grid__isEmpty(char ***newGen, int gridSize)</div><div class="ttdoc">Fonction permettant de vérifier si une grille de cellules est vide, c'est-à-dire si elle ne contient ...</div><div class="ttdef"><b>Definition:</b> grid.c:238</div></div>
+<div class="ttc" id="agrid_8h_html_a1d04871010b3a7cd0b6abfbb4758f5ce"><div class="ttname"><a href="grid_8h.html#a1d04871010b3a7cd0b6abfbb4758f5ce">Grid__compareGen</a></div><div class="ttdeci">int Grid__compareGen(Grid *self, char ***newGen)</div><div class="ttdoc">Fonction permettant de comparer une génération de cellules avec toutes celles stockées en mémoire dan...</div><div class="ttdef"><b>Definition:</b> grid.c:148</div></div>
+<div class="ttc" id="agrid_8h_html_a2316ba562077ca8d023abfa0a85acf29"><div class="ttname"><a href="grid_8h.html#a2316ba562077ca8d023abfa0a85acf29">Grid__updatePatterns</a></div><div class="ttdeci">void Grid__updatePatterns(Grid *self, char ***newGen)</div><div class="ttdoc">Fonction permettant de mettre à jour les générations de cellules stockées en mémoire en fonction en f...</div><div class="ttdef"><b>Definition:</b> grid.c:289</div></div>
+<div class="ttc" id="agrid_8h_html_a7b382deb662500edc39be2823e0828fe"><div class="ttname"><a href="grid_8h.html#a7b382deb662500edc39be2823e0828fe">Grid__getNbGeneration</a></div><div class="ttdeci">int Grid__getNbGeneration(Grid *self)</div><div class="ttdoc">Accesseur sur le nombre maximal de générations autorisées pour une analyse.</div><div class="ttdef"><b>Definition:</b> grid.c:29</div></div>
+<div class="ttc" id="agrid_8h_html_a86a1dffa05bf26bb0d7a557f2a87e2a8"><div class="ttname"><a href="grid_8h.html#a86a1dffa05bf26bb0d7a557f2a87e2a8">Grid__setGridSize</a></div><div class="ttdeci">void Grid__setGridSize(Grid *self, int gridSize)</div><div class="ttdoc">Mutateur sur la taille de la grille contenant les cellules.</div><div class="ttdef"><b>Definition:</b> grid.c:34</div></div>
+<div class="ttc" id="agrid_8h_html_a90d782cf4074afc615f20c225e6de0bf"><div class="ttname"><a href="grid_8h.html#a90d782cf4074afc615f20c225e6de0bf">Grid__levelIsEmpty</a></div><div class="ttdeci">int Grid__levelIsEmpty(char **level, int gridSize)</div><div class="ttdoc">Fonction permettant de vérifier si un plan (ou feuillet) de cellules est vide, c'est-à-dire si elle n...</div><div class="ttdef"><b>Definition:</b> grid.c:266</div></div>
+<div class="ttc" id="agrid_8h_html_a9313c060e5006122fdcca4337c9a854a"><div class="ttname"><a href="grid_8h.html#a9313c060e5006122fdcca4337c9a854a">Grid__create</a></div><div class="ttdeci">Grid * Grid__create(int typeOfAnalysis, char *rule, int nbGenerations, int nbProc)</div><div class="ttdoc">Constructeur de l'objet Grid où sont initialisés les contenus des attributs de la structure.</div><div class="ttdef"><b>Definition:</b> grid.c:5</div></div>
+<div class="ttc" id="agrid_8h_html_aaa93f36b3c02b20479cc543b9f881e9b"><div class="ttname"><a href="grid_8h.html#aaa93f36b3c02b20479cc543b9f881e9b">Grid__setToDefault</a></div><div class="ttdeci">void Grid__setToDefault(Grid *self)</div><div class="ttdoc">Fonction permettant de remettre à zéro le contenu des grilles de cellules NGeneration,...</div><div class="ttdef"><b>Definition:</b> grid.c:92</div></div>
+<div class="ttc" id="agrid_8h_html_aab786313a399b883ff4cc8c7de3a642d"><div class="ttname"><a href="grid_8h.html#aab786313a399b883ff4cc8c7de3a642d">Grid__dataToGrid</a></div><div class="ttdeci">char *** Grid__dataToGrid(Grid *self)</div><div class="ttdoc">Fonction permettant de transformer les résultats reçus par le processus 0 sous la forme de chaines de...</div><div class="ttdef"><b>Definition:</b> grid.c:513</div></div>
+<div class="ttc" id="agrid_8h_html_ab34ec03dcea3cfdf846265206feb51fa"><div class="ttname"><a href="grid_8h.html#ab34ec03dcea3cfdf846265206feb51fa">Grid__analyzePattern</a></div><div class="ttdeci">int * Grid__analyzePattern(Grid *self)</div><div class="ttdoc">Fonction généraliste regroupant une grosse partie du processus du processus 0, de la création de data...</div><div class="ttdef"><b>Definition:</b> grid.c:324</div></div>
+<div class="ttc" id="agrid_8h_html_ab3c1386e080209fb6f6fa987b11f4b68"><div class="ttname"><a href="grid_8h.html#ab3c1386e080209fb6f6fa987b11f4b68">Grid__displayGrid</a></div><div class="ttdeci">void Grid__displayGrid(char ***currentGen, int gridSize, int nbPlanes)</div><div class="ttdoc">Fonction permettant d'afficher une génération de cellules contenue dans une grille.</div><div class="ttdef"><b>Definition:</b> grid.c:72</div></div>
+<div class="ttc" id="agrid_8h_html_abebfcb8c8f5485d744c99cec9b07ce5d"><div class="ttname"><a href="grid_8h.html#abebfcb8c8f5485d744c99cec9b07ce5d">Grid__setTasksPerProc</a></div><div class="ttdeci">void Grid__setTasksPerProc(Grid *self, int *tasksPerProc)</div><div class="ttdoc">Mutateur sur le nombre de plans (feuillets) à affecter à chaque processus autre que le processus 0.</div><div class="ttdef"><b>Definition:</b> grid.c:39</div></div>
+<div class="ttc" id="agrid_8h_html_ac038bc2faebbc36e9dce87c1f31a18bf"><div class="ttname"><a href="grid_8h.html#ac038bc2faebbc36e9dce87c1f31a18bf">Grid__initializeReceivedDataTab</a></div><div class="ttdeci">void Grid__initializeReceivedDataTab(Grid *self)</div><div class="ttdoc">Fonction permettant d'initialiser le tableau receivedData servant à stocker dans chacun de ses buffer...</div><div class="ttdef"><b>Definition:</b> grid.c:491</div></div>
+<div class="ttc" id="agrid_8h_html_acf08cde9cd71c895bbe71c3c13c626f3"><div class="ttname"><a href="grid_8h.html#acf08cde9cd71c895bbe71c3c13c626f3">Grid__createDataPerProc</a></div><div class="ttdeci">char ** Grid__createDataPerProc(Grid *self)</div><div class="ttdoc">Fonction qui va découper la grille contenant la génération de cellules et générer,...</div><div class="ttdef"><b>Definition:</b> grid.c:447</div></div>
+<div class="ttc" id="agrid_8h_html_af9d2a91ff4310baf391babcac7ff8e38"><div class="ttname"><a href="grid_8h.html#af9d2a91ff4310baf391babcac7ff8e38">Grid__getGridSize</a></div><div class="ttdeci">int Grid__getGridSize(Grid *self)</div><div class="ttdoc">Accesseur sur la taille de la grille contenant les cellules.</div><div class="ttdef"><b>Definition:</b> grid.c:24</div></div>
+<div class="ttc" id="astructGrid_html"><div class="ttname"><a href="structGrid.html">Grid</a></div><div class="ttdoc">Objet regroupant les informations de gestion des différentes générations, et tout ce qui y est liée,...</div><div class="ttdef"><b>Definition:</b> grid.h:29</div></div>
+<div class="ttc" id="astructGrid_html_a0733db032bba45785738229979aacdeb"><div class="ttname"><a href="structGrid.html#a0733db032bba45785738229979aacdeb">Grid::NMinusOneGeneration</a></div><div class="ttdeci">char *** NMinusOneGeneration</div><div class="ttdef"><b>Definition:</b> grid.h:31</div></div>
+<div class="ttc" id="astructGrid_html_a26e9079eaeb440a1a3ce96b3b704fb70"><div class="ttname"><a href="structGrid.html#a26e9079eaeb440a1a3ce96b3b704fb70">Grid::NGeneration</a></div><div class="ttdeci">char *** NGeneration</div><div class="ttdef"><b>Definition:</b> grid.h:30</div></div>
+<div class="ttc" id="astructGrid_html_a27a1db69b5402db70a469ea731e3a64c"><div class="ttname"><a href="structGrid.html#a27a1db69b5402db70a469ea731e3a64c">Grid::typeOfAnalysis</a></div><div class="ttdeci">int typeOfAnalysis</div><div class="ttdef"><b>Definition:</b> grid.h:34</div></div>
+<div class="ttc" id="astructGrid_html_a2f82a7d9200db023544756d70d738efe"><div class="ttname"><a href="structGrid.html#a2f82a7d9200db023544756d70d738efe">Grid::gridSize</a></div><div class="ttdeci">int gridSize</div><div class="ttdef"><b>Definition:</b> grid.h:33</div></div>
+<div class="ttc" id="astructGrid_html_a30d2b9d0fa09979aacd9c965a5ed5ecd"><div class="ttname"><a href="structGrid.html#a30d2b9d0fa09979aacd9c965a5ed5ecd">Grid::nbProc</a></div><div class="ttdeci">int nbProc</div><div class="ttdef"><b>Definition:</b> grid.h:38</div></div>
+<div class="ttc" id="astructGrid_html_a3ea2b3b70f8ffc3ed98466046b3adf82"><div class="ttname"><a href="structGrid.html#a3ea2b3b70f8ffc3ed98466046b3adf82">Grid::tasksPerProc</a></div><div class="ttdeci">int * tasksPerProc</div><div class="ttdef"><b>Definition:</b> grid.h:39</div></div>
+<div class="ttc" id="astructGrid_html_a8d8661eeecf05db6575e1c8d0b725fb2"><div class="ttname"><a href="structGrid.html#a8d8661eeecf05db6575e1c8d0b725fb2">Grid::receivedData</a></div><div class="ttdeci">char ** receivedData</div><div class="ttdef"><b>Definition:</b> grid.h:37</div></div>
+<div class="ttc" id="astructGrid_html_ad9a60e995e448dafd4724187f24493fd"><div class="ttname"><a href="structGrid.html#ad9a60e995e448dafd4724187f24493fd">Grid::nbGenerations</a></div><div class="ttdeci">int nbGenerations</div><div class="ttdef"><b>Definition:</b> grid.h:36</div></div>
+<div class="ttc" id="astructGrid_html_ade98611b7b50d2cd32735c2ae6a7e4ed"><div class="ttname"><a href="structGrid.html#ade98611b7b50d2cd32735c2ae6a7e4ed">Grid::NMinusTwoGeneration</a></div><div class="ttdeci">char *** NMinusTwoGeneration</div><div class="ttdef"><b>Definition:</b> grid.h:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="grid_8h.html">grid.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
